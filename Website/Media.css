@@ -1,0 +1,260 @@
+@media screen and (max-width : 750px) {
+    header{
+        height:90vh;
+    }
+
+    .introSec{
+        height: 60vh;
+    }
+    .photoArea{
+        display: none;
+    }
+
+    .descriptionBox{
+        height: 31%;
+        width: 94%;
+    }
+
+    .descriptionBox h1{
+        line-height: 60px;
+        font-size: 3.5rem;
+    }
+
+    .descriptionBox h2{
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .textSec{
+        height: 58%;
+        width: 94%;
+    }
+
+
+    .contactSec{
+        display: flex;
+        flex-direction: column;
+        height: 76.6vh;
+        padding: 2% 5%;
+        justify-content: space-evenly;
+    }
+
+
+    .infoSec{
+        display: flex;
+        align-items: center;
+    }
+
+    .infoSec p{
+        text-align: center;
+        text-wrap: balance;
+    }
+
+    .copy{
+        font-size: 20px;
+        padding-bottom: 20px;
+        height: 20px;
+        width: 100%;
+    }
+
+    .boxHead{
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        height: auto;
+        display: flex;
+    }
+
+    .linkBox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 60%;
+    }
+
+    .linkBox a{
+        margin: 5px;
+    }
+
+    .contactAndAdd .boxHead{
+        margin:10px 0;
+    }
+
+    .contactAndAdd{
+        padding-top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .addSec{
+        margin: 0;
+        width: 70%;
+    }
+    
+    .conSec{
+        width: 70%;
+    }
+}
+@media screen and (max-width : 970px) {
+    .introSec{
+        position: relative;
+        width: 90%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .photoArea{
+        position: absolute;
+        top: 10px;
+        left: 54%;
+        height: 50%;
+        width: 43%;
+    }
+
+    .introSec{
+        font-size: 18px;
+    }
+    
+    .textSec{
+        margin-top: 6%;
+        height: 55%;
+        padding: 10px;
+        height: max-content;
+        width: auto;
+    }
+
+    .textSec::-webkit-scrollbar{
+        display: none;
+    }
+
+    .descriptionBox{
+        margin-top: 5%;
+        min-width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .descriptionBox h1{
+        line-height: 75px;
+        font-size: 4.4rem;
+    }
+
+    .descriptionBox h2{
+        font-size: 1.9rem;
+        margin-bottom: 10px;
+    }
+
+
+    .educationSec{
+        height:90vh;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .educationAside{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* height: 70px; */
+        height: 52px;
+        border-right: 0 ;
+        border: 2px solid white;
+        margin: 5px;
+        padding: 5px 0;
+    }
+
+    .eduBox{
+        min-width: 34%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        /* height:57px; */
+        height:31px;
+        padding: 2px;
+        overflow: hidden;
+        font-size: 1rem;
+        margin: 5px 10px; 
+    }
+
+    .eduBox .institute{
+        font-size: 17px;
+        padding : 0 10px;
+    }
+    
+    .eduDetails{
+        left: 0;
+        margin: 0% 5%;
+        width: 90%;
+        height: 70%;
+    }
+
+
+    .resume{
+        margin-left: -10%;
+        font-size: 1.5rem;
+        width: auto;
+    }
+
+    .resume .downl{
+        margin-top: 4px;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .resume:hover .downl{
+        margin-top: 5px;
+        width: 40px;
+        height: 40px;
+        color: var(--primary-color-);
+        background-color: rgb(228, 237, 247);
+        transition: all .3s ease;
+    }
+
+    .newClass::after{
+        margin-left: -5%;
+    }
+}
+
+@media screen and (min-width : 970px) {
+    
+    .mainTop{
+        justify-content: space-between;
+    }
+    
+    .dropdown{
+        border-top: 2px solid white;
+        display: none;
+    }
+    .dropdownBtn{
+        display: none;
+    }
+    
+    .containerSmall{
+        display: flex;
+    }
+
+    .containerLarge{
+        margin-left: 0;
+    }
+    
+    .resume{
+        margin-left: 5%;
+    }
+}

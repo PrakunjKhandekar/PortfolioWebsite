@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="first.css">
+    <link rel="stylesheet" href="Media.css">
+</head>
+
+<body>
+
+    <div class="hovBtn topBtn" onclick="toTop()">
+        <img src="arrow_upward_40dp_EFEFEF_FILL0_wght400_GRAD0_opsz40.svg" alt="UP" class="arrow">
+    </div>
+    <div class="hovBtn bottomBtn" onclick="toBottom()">
+        <img src="arrow_downward_40dp_EFEFEF_FILL0_wght400_GRAD0_opsz40.svg" alt="UP" class="arrow">
+    </div>
+
+    <header id="header">
+        <nav>
+            <div class="logo">PRAKUNJ</div>
+            <div><span class="contact">Contact Me</span></div>
+        </nav>
+
+        <div class="background">
+            <div class="introSec">
+
+                <div class="descriptionBox">
+                    <h1>PRAKUNJ KHANDEKAR</h1>
+                    <h2>WEB-DEVELOPER PORTFOLIO</h2>
+                </div>
+
+                <div class="photoArea"></div>
+
+                <div class="textSec">
+                    <h3 class="aboutText">About Myself</h3>
+                    <p class="intro">
+                        Recent postgraduate in MCA with a focus on Java programming language and front-end
+                        development languages. Eager to apply academic knowledge to innovative Web development
+                        projects. A quick learner with a passion for staying updated on emerging technologies.
+                        Looking to start my career as a Web developer with a reputed firm driven by technology.
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+
+
+    <main id="mainSec">
+        <div class="mainTop" id="mainNav">
+            <div class="withoutDropDn">
+                <div id="optMenu" class="optionMenu">
+                    <div class="openBtn" onclick="funcResClose('optMenu')">Close</div>
+                    <a class="dwlBtn" href="Prakunj Khandekar.pdf" download>DownLoad</a>
+                    <span>OR</span>
+                    <a href="Resume.html">Preview</a>
+                </div>
+
+                <div class="containerLarge">
+                    <div id="resBtn" class="resume">Resume
+                        <div class="downl"></div>
+                    </div>
+                </div>
+
+                <div class="containerSmall">
+                    <div class="btns" onclick="toSkill(this)"><span>Skills</span></div>
+                    <div class="btns" onclick="toEdu(this)"><span>Education</span></div>
+                    <div class="btns" onclick="toWorks(this)"><span>Works</span></div>
+                </div>
+
+                <div class="dropdownBtn" id="dropDnBtn"></div>
+            </div>
+
+
+            <div class="dropdown drpVisible" id="dropdown">
+                <div class="btns" onclick="toSkill()"><a>Skills</a></div>
+                <div class="btns" onclick="toWorks()"><a>Works</a></div>
+                <div class="btns" onclick="toEdu()"><a>Education</a></div>
+            </div>
+        </div>
+
+        <section class="skills" id="skillSection">
+            <h1 class="sectionHeading">SKILL'S SECTION</h1>
+            <div class="skillRow" id="skillRow">
+
+                <div class="skillBox">
+                    <img class="imgCard" src="Java-Logo-1.svg" alt="Java.svg">
+                    <div class="name">Java Programming Language</div>
+                    <div class="description">
+                        I have strong proficiency in Java programming, with a deep understanding of OOPs concepts, including inheritance, polymorphism, abstraction, and interfaces.I have also completed a project using Java(JSE) and GUI frameworks like Swing and AWT, where I designed interactive desktop applications.
+                    </div>
+                </div>
+
+                <div class="skillBox">
+                    <img class="imgCard" src="MERN-logo.png" alt="Java.svg">
+                    <div class="name">MERN Stack Developemnt</div>
+                    <div class="description">
+                        I have strong proficiency in MERN stack web development which enables me to build full-stack web applications from scratch.
+                        Using MongoDB, I manage and manipulate data efficiently in a non-relational database environment, allowing for flexibility and scalability.I have also learned RESTful APIs.
+                    </div>
+                </div>
+                <div class="skillBox">
+                    <img class="imgCard" src="PngItem_5189049.png" alt="Java.svg">
+                    <div class="name">Front End Development</div>
+                    <div class="description">
+                        I have experience in front-end development, working with core technologies such as HTML, CSS, and JavaScript. I have created projects that demonstrate my ability to build dynamic, interactive web pages.I have understanding of responsive web design, ensuring that websites are optimized for various devices.
+                    </div>
+                </div>
+                <div class="skillBox">
+                    <img class="imgCard" src="mysql-original-wordmark.svg" alt="Java.svg">
+                    <div class="name">MySql <span>(Relational Database)</span></div>
+                    <div class="description">
+                        I have a understanding of relational database,I have implemented this in Java projects using JDBC (Java Database Connectivity).I I have worked with CRUD operations—Create, Read, Update, and Delete. These fundamental operations are essential for interacting with databases:
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="educationSec" id="eduSec">
+            <aside class="educationAside">
+                <div class="eduBox" onclick="showBox('tenthStd')">
+                    <h1 class="std">10<sup>TH</sup> STANDARD</h1>
+                    <h2 class="institute">ARERA CONVENT H SEC SCHOOL</h2>
+                    <h3 class="infoBar">more info <span></span></h3>
+                </div>
+                <div class="eduBox" onclick="showBox('twelthStd')">
+                    <h1 class="std">12<sup>TH</sup> STANDARD</h1>
+                    <h2 class="institute">ARERA CONVENT H SEC SCHOOL</h2>
+                    <h3 class="infoBar">more info <span></span></h3>
+                </div>
+                <div class="eduBox" onclick="showBox('gradBox')">
+                    <h1 class="std">GRADUATION</h1>
+                    <h2 class="institute">MOTILAL VIGYAN MAHAVIDYALAYA</h2>
+                    <h3 class="infoBar">more info <span></span></h3>
+                </div>
+                <div class="eduBox" onclick="showBox('postGradBox')">
+                    <h1 class="std">POST-GRADUATION</h1>
+                    <h2 class="institute">L.N.C.T GROUP OF COLLEGE</h2>
+                    <h3 class="infoBar">more info <span></span></h3>
+                </div>
+            </aside>
+
+            <hr>
+
+            <aside class="detailsBox" id="detailsBox">
+                <h1 class="sectionHeading">EDUCATION DETAILS</h1>
+                <article class="eduDetails top" id="tenthStd">
+                    <h1 class="std">10<sup>TH</sup> STANDARD</h1>
+                    <h2 class="institute">SCHOOL NAME : ARERA CONVENT H SEC SCHOOL</h2>
+                    <h3 class="duration"><span class="session">Session : </span> 2016-17</h3>
+
+
+                    <table class="resTable">
+                        <tr>
+                            <td>
+                                <p class="subjects">Science</p>
+                            </td>
+                            <td><span class="marks">91</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="subjects">Maths</p>
+                            </td>
+                            <td><span class="marks">80</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="subjects">Social Science</p>
+                            </td>
+                            <td><span class="marks">69</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="subjects">English</p>
+                            </td>
+                            <td><span class="marks">75</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="subjects">Sanskrit </p>
+                            </td>
+                            <td><span class="marks">82</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="subjects">Hindi</p>
+                            </td>
+                            <td><span class="marks">86</span></td>
+                        </tr>
+                        <tr class="finalScore">
+                            <td>
+                                <p class="percentage">Final Score</p>
+                            </td>
+                            <td><span class="marks">80.5%</span></td>
+                        </tr>
+                    </table>
+                </article>
+
+                <article class="eduDetails hidden" id="twelthStd">
+                    <h1 class="std">12<sup>TH</sup> STANDARD</h1>
+                    <h2 class="institute">SCHOOL NAME : ARERA CONVENT H SEC SCHOOL</h2>
+                    <h3 class="duration"><span class="session">Session : </span> 2018-19</h3>
+
+                    <table class="resTable">
+                        <tr>
+                            <td>
+                                <p class="subjects">Physics</p>
+                            </td>
+                            <td><span class="marks">81</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="subjects">Maths</p>
+                            </td>
+                            <td><span class="marks">70</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="subjects">Chemistry</p>
+                            </td>
+                            <td><span class="marks">70</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="subjects">English</p>
+                            </td>
+                            <td><span class="marks">75</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="subjects">Hindi</p>
+                            </td>
+                            <td><span class="marks">82</span></td>
+                        </tr>
+                        <tr class="finalScore">
+                            <td>
+                                <p class="percentage">Final Score</p>
+                            </td>
+                            <td><span class="marks">75.6%</span></td>
+                        </tr>
+                    </table>
+                </article>
+
+                <article class="eduDetails hidden" id="gradBox">
+                    <h1 class="std">GRADUATION</h1>
+                    <h2 class="institute">COLLEGE NAME : MOTILAL VIGYAN MAHAVIDYALAYA</h>
+                        <h3 class="duration">2016-17</h3>
+
+                        <h3 class="duration"><span class="session">Session : </span> 2018-19</h3>
+
+                        <table class="resTable">
+                            <tr>
+                                <td>
+                                    <p class="subjects">Defence and Strategic study</p>
+                                </td>
+                                <td><span class="marks">84</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="subjects">Maths</p>
+                                </td>
+                                <td><span class="marks">78</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="subjects">Computer Science</p>
+                                </td>
+                                <td><span class="marks">100</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="subjects">Foundation Courses</p>
+                                </td>
+                                <td><span class="marks">64</span></td>
+                            </tr>
+                            <tr class="finalScore">
+                                <td>
+                                    <p class="percentage">Final Score</p>
+                                </td>
+                                <td><span class="marks">74.12%</span></td>
+                            </tr>
+                        </table>
+
+                </article>
+
+                <article class="eduDetails hidden" id="postGradBox">
+                    <h1 class="std">POST-GRADUATION</h1>
+                    <h2 class="institute">COLLEGE NAME : LAKSHMI NARAIN COLLEGE OF TECHNOLOGY</h2>
+                    <h3 class="duration"><span class="session">Session</span> 2016-17</h3>
+                    <h3 class="duration"><span class="session">Final Result(7.83 CGPA)</span></h3>
+                    <table class="resTable">
+                        <tr>
+                            <td>
+                                <p class="subjects">Maths</p>
+                            </td>
+                            <td><span class="marks">78</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="subjects">Computer Science</p>
+                            </td>
+                            <td><span class="marks">100</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="subjects">Foundation Courses</p>
+                            </td>
+                            <td><span class="marks">64</span></td>
+                        </tr>
+                        <tr class="finalScore">
+                            <td>
+                                <p class="percentage">Final Score IV SEM</p>
+                            </td>
+                            <td><span class="marks">8.67 CGPA</span></td>
+                        </tr>
+                    </table>
+                </article>
+            </aside>
+        </section>
+
+        <section class="works" id="workSec">
+            <h1 class="sectionHeading">WORKS AND PROJECT SECTION</h1>
+            <!-- <div class="navBtn btnLeft" id="navBtnLeft">
+                <img src="arrow_upward_40dp_EFEFEF_FILL0_wght400_GRAD0_opsz40.svg" alt="">
+            </div> -->
+            <div class="workRow">
+                <div class="projectBox" id="boxOne">
+                    <h1 class="projectTitle">E-Mart Desktop Application</h1>
+                    <h2 class="projLang">Java Programming Language</h2>
+                    <div class="projectImg"></div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo dolorum sit nobis rem in,
+                        vitae quis porro praesentium ipsum! Eligendi odit ipsum hic iste ratione rerum porro vero dicta,
+                        nemo unde minus nesciunt voluptatibus harum eius facilis voluptatem praesentium maiores et velit
+                        nulla ipsa. Recusandae expedita delectus possimus, soluta dolores doloribus quaerat ducimus
+                        reprehenderit quasi ullam sed id unde quia debitis architecto harum sit illo quibusdam
+                    </p>
+                    
+                    <div class="openBtn">
+                        <a href="https://github.com/PrakunjKhandekar/E-Mart-Application">Open</a>
+                    </div>
+                </div>
+
+                <div class="projectBox" id="boxTwo">
+                    <h1 class="projectTitle">SCA Landing Page Front End Only</h1>
+                    <h2 class="projLang">HTML, CSS And JavaScript</h2>
+                    <div class="projectImg"></div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo dolorum sit nobis rem in,
+                        vitae quis porro praesentium ipsum! Eligendi odit ipsum hic iste ratione rerum porro vero dicta,
+                        nemo unde minus nesciunt voluptatibus harum eius facilis voluptatem praesentium maiores et velit
+                        nulla ipsa. Recusandae expedita delectus possimus, soluta dolores doloribus quaerat ducimus
+                        reprehenderit quasi ullam sed id unde quia debitis architecto harum sit illo quibusdam
+                    </p>
+                    <div class="openBtn">
+                        <a href="https://github.com/PrakunjKhandekar/sca_website">Open</a>
+                    </div>
+
+                </div>
+
+                <div class="projectBox" id="boxThree">
+                    <h1 class="projectTitle">My Resume</h1>
+                    <h2 class="projLang">HTML, CSS And JavaScript</h2>
+                    <div class="projectImg"></div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo dolorum sit nobis rem in,
+                        vitae quis porro praesentium ipsum! Eligendi odit ipsum hic iste ratione rerum porro vero dicta,
+                        nemo unde minus nesciunt voluptatibus harum eius facilis voluptatem praesentium maiores et velit
+                        nulla ipsa. Recusandae expedita delectus possimus, soluta dolores doloribus quaerat ducimus
+                        reprehenderit quasi ullam sed id unde quia debitis architecto harum sit illo quibusdam
+                    </p>
+                    <div class="openBtn"><a href="https://github.com/PrakunjKhandekar/myResume">Open</a></div>
+                </div>
+
+                <div class="projectBox" id="boxFour">
+                    <h1 class="projectTitle">FrontEnd Works for Web internship</h1>
+                    <h2 class="projLang">HTML, CSS And JAvaScript</h2>
+                    <div class="projectImg"></div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo dolorum sit nobis rem in,
+                        vitae quis porro praesentium ipsum! Eligendi odit ipsum hic iste ratione rerum porro vero dicta,
+                        nemo unde minus nesciunt voluptatibus harum eius facilis voluptatem praesentium maiores et velit
+                        nulla ipsa. Recusandae expedita delectus possimus, soluta dolores doloribus quaerat ducimus
+                        reprehenderit quasi ullam sed id unde quia debitis architecto harum sit illo quibusdam
+                    </p>
+                    <div class="openBtn">
+                        <a href="https://github.com/PrakunjKhandekar/Yhill-project-repository">Open</a>
+                    </div>
+                </div>
+
+                <div class="projectBox" id="boxFive">
+                    <h1 class="projectTitle">Smaller Java Based Applications</h1>
+                    <h2 class="projLang">Java Programming Language</h2>
+                    <div class="projectImg"></div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo dolorum sit nobis rem in,
+                        vitae quis porro praesentium ipsum! Eligendi odit ipsum hic iste ratione rerum porro vero dicta,
+                        nemo unde minus nesciunt voluptatibus harum eius facilis voluptatem praesentium maiores et velit
+                        nulla ipsa. Recusandae expedita delectus possimus, soluta dolores doloribus quaerat ducimus
+                        reprehenderit quasi ullam sed id unde quia debitis architecto harum sit illo quibusdam
+                    </p>
+                    <div class="openBtn">
+                        <a href="https://github.com/PrakunjKhandekar/codesoft">
+                            Open
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="navBtn btnRight" id="navBtnRight">
+                <img src="arrow_upward_40dp_EFEFEF_FILL0_wght400_GRAD0_opsz40.svg" alt="">
+            </div> -->
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <div class="contactSec">
+            <div class="infoSec">
+                <h1 class="logo">Prakunj Khandekar</h1>
+                <h2>Web <span>&</span> Java Developer</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti quo velit, iusto ad sed nihil
+                    quaerat, aspernatur quod nobis excepturi ipsam temporibus omnis rerum aut!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, adipisci!
+                </p>
+            </div>
+
+            <div class="links">
+                <h3 class="boxHead">Socials</h3>
+                <div class="linkBox">
+                    <a href="">GitHub</a>
+                    <a href="">LinkedIn</a>
+                    <a href="">Indeed</a>
+                    <a href="">LeetCode</a>
+                    <a href="">GeeksForGeeks</a>
+                    <a href="">Facebook</a>
+                </div>
+            </div>
+
+            <div class="contactAndAdd">
+                <h3 class="boxHead">Address And Contacts</h3>
+                <div class="addSec">
+                    <h4 class="contactHead">Location</h4>
+                    <p class="cityState"> Bhopal, Madhya Pradesh</p>
+                </div>
+                <div class="conSec">
+                    <h4 class="contactHead">Contacts</h4>
+                    <p>Phone no : <span class="num">+911234567897</span></p>
+                    <p>WhatsApp : <span class="num">+911234567897</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="copy">This is original work by Prakunj Khandekar <span>@</span>2024</div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

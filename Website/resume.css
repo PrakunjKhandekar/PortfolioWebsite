@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.container{
+    margin:auto;
+    width: 790px;
+    display: flex;
+    height: 1123px;
+    align-items:  center;
+    flex-direction: column;
+    background-color: white;    
+}
+
+header{
+    width: 90%;
+    margin: 10px 0px 0px;
+    height: 43px;
+}
+
+.nameHeader{
+    justify-content: center;
+    text-align: center;
+}
+
+.nameHeader h1{
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header hr{
+    margin: 1px 0px;
+}
+
+header .lighter{
+    height: 1px;
+    background-color: black;
+}
+
+header .bolder{
+    height: 2px;
+    background-color: black;
+}
+
+.contacts{
+    width: 90%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: pink; */
+}
+
+
+.sections{
+    width: 90%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3px;
+}
+
+.sectionHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionHeader hr{
+    width: 50%;
+    height: 0px;
+    border-top:solid 2px black;
+}
+
+.left{
+    margin-right: 10px;
+}
+
+.right{
+    margin-left: 10px;
+}
+
+.summaryText{
+    width: 100%;
+    margin: 5px 0px;
+    text-align: left;
+}
+
+.summaryText p{
+    font-size: 16px;
+    font-stretch: normal;
+    width: 100%;
+}
+
+.educationRow{
+    width: 100%;
+    margin: 3px 0px;
+}
+
+.educationRow h3,h4,p{
+    display: inline;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.row span{
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.date{
+    margin-top: 3px;
+    font-size: 15px;
+}
+
+.marks{
+    margin-left: 30px;
+}
+
+.experiences{
+    margin-top: 5px;
+}
+
+.comName{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.working li,li{
+    margin-left: 30px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills{
+    display: flex;
+    margin-top: 5px;
+}
+
+.skillColumn{
+    width: 50%;
+}
+
+.sections:last-child .left{
+    width: 25.5%;
+}
+
+.sections:last-child .right{
+    width: 18%;
+}
+
+.profiles{
+    margin-top: 3px;
+}
+
+hr {
+    display: block;
+    height:0px;
+    background: transparent;
+    border: none;
+    border-top: solid 2px #000000 !important;
+}
+
+.projectName{
+    font-weight:600 ;
+    margin: 3px 0px;
+}
